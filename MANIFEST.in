@@ -1,0 +1,3 @@
+include LICENSE
+include README.rst
+recursive-include locale/*/LC_MESSAGES *.po
