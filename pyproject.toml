@@ -5,7 +5,7 @@ authors = [
     { name = "Rukosenpa", email = "daniktarasov@gmail.coom" },
 ]
 description = "Django app to handle promotion and marketing events."
-readme = "README.rst"
+readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -33,7 +33,7 @@ name = "django-promotion-counters"
 version = "0.1.0"
 description = "Django app to handle promotion and marketing events."
 authors = ["rukosenpa <daniktarasov@gmail.com>"]
-readme = "README.rst"
+readme = "README.md"
 packages = [{ include = "promotion_counters" }]
 
 [tool.poetry.dependencies]
