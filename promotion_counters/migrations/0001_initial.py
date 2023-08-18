@@ -2,9 +2,11 @@
 
 import django.core.validators
 import django.utils.timezone
-import project.apps.promotion.models
 from django.conf import settings
 from django.db import migrations, models
+
+import promotion_counters.models.utils
+from promotion_counters.models.utils import uuid7
 
 
 class Migration(migrations.Migration):
@@ -18,7 +20,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='PromotionProgram',
             fields=[
-                ('id', models.UUIDField(default=project.apps.promotion.models.uuid7, editable=False, primary_key=True,
+                ('id', models.UUIDField(default=uuid7, editable=False, primary_key=True,
                                         serialize=False)),
                 ('title', models.CharField(max_length=255, verbose_name='Title')),
                 ('description', models.TextField(blank=True, verbose_name='Description')),
@@ -42,7 +44,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='AchievementCounter',
             fields=[
-                ('id', models.UUIDField(default=project.apps.promotion.models.uuid7, editable=False, primary_key=True,
+                ('id', models.UUIDField(default=promotion_counters.models.utils.uuid7, editable=False, primary_key=True,
                                         serialize=False)),
                 ('counter', models.IntegerField(default=0, validators=[django.core.validators.MinValueValidator(0)],
                                                 verbose_name='Counter')),

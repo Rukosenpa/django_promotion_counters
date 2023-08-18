@@ -4,7 +4,7 @@ from django.db import models
 from django.utils.timezone import now
 from django.utils.translation import gettext_lazy as _
 
-from . import uuid7
+from promotion_counters.models.utils import uuid7
 
 User = get_user_model()
 

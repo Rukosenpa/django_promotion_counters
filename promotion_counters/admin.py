@@ -1,6 +1,10 @@
 from django import forms
 from django.contrib import admin
 
+from promotion_counters.action import action_registry, reward_registry
+from promotion_counters.models.achievement_counter import AchievementCounter
+from promotion_counters.models.promotion_program import PromotionProgram
+
 
 # Register your models here.
 class PromotionProgramForm(forms.ModelForm):

@@ -2,7 +2,7 @@ from django.core.validators import MinValueValidator
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
-from . import uuid7
+from promotion_counters.models.utils import uuid7
 
 
 class PromotionProgram(models.Model):

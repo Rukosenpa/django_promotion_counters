@@ -6,6 +6,9 @@ from django.db import models, transaction
 from django.db.models import Q
 from django.utils import timezone
 
+from promotion_counters.models.achievement_counter import AchievementCounter
+from promotion_counters.models.promotion_program import PromotionProgram
+
 User = get_user_model()
 
 

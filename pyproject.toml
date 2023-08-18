@@ -6,7 +6,7 @@ authors = [
 ]
 description = "Django app to handle promotion and marketing events."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -30,17 +30,22 @@ classifiers = [
 
 [tool.poetry]
 name = "django-promotion-counters"
-version = "0.1.0"
+version = "0.1.1"
 description = "Django app to handle promotion and marketing events."
 authors = ["rukosenpa <daniktarasov@gmail.com>"]
 readme = "README.md"
 packages = [{ include = "promotion_counters" }]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.8"
 django = "3.2"
 uuid7 = "^0.1.0"
 
+
+[tool.poetry.group.dev.dependencies]
+faker = "^19.3.0"
+pytest-mock = "^3.11.1"
+pytest = "^7.4.0"
 
 [build-system]
 requires = ["poetry-core"]
