@@ -30,7 +30,7 @@ classifiers = [
 
 [tool.poetry]
 name = "django-promotion-counters"
-version = "0.1.1"
+version = "0.1.2"
 description = "Django app to handle promotion and marketing events."
 authors = ["rukosenpa <daniktarasov@gmail.com>"]
 readme = "README.md"
