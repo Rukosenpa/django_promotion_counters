@@ -5,7 +5,7 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
     dependencies = [
-        ('promotion', '0002_promotionprogram_enabled'),
+        ('promotion_counters', '0002_promotionprogram_enabled'),
     ]
 
     operations = [
