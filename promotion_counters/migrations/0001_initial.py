@@ -53,7 +53,7 @@ class Migration(migrations.Migration):
                  models.DateTimeField(default=django.utils.timezone.now, verbose_name='Last incremented at')),
                 ('achieved_at', models.DateTimeField(blank=True, null=True, verbose_name='Achieved at')),
                 ('promotion_program',
-                 models.ForeignKey(on_delete=django.db.models.deletion.RESTRICT, to='promotion.promotionprogram',
+                 models.ForeignKey(on_delete=django.db.models.deletion.RESTRICT, to='promotion_counters.promotionprogram',
                                    verbose_name='Promotion program')),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
